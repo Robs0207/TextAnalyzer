@@ -76,9 +76,10 @@ function calculateAverageSentenceLength(wordArray, numberOfLineBreaks) {
     	
     	var wordLength = wordArray[i].length;
     	totalTextLength += wordLength;
-        
+     }
+	
     averageSentenceLength = totalTextLength / ( numberOfLineBreaks + 1 );
-   	$('.js-average-sentence-length').text(averageSentenceLength);
+    $('.js-average-sentence-length').text(averageSentenceLength);
 }
 
 $(function() {
